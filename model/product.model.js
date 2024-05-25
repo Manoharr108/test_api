@@ -2,12 +2,11 @@ const mongoose = require('mongoose')
 
 const schemas = mongoose.Schema(
     {
-        name:{
-            type:String
-        },
-        number:{
-            type:Number
-        }
+        name:{type:String},
+        date:{type:String},
+        time:{type:String},
+        content:{type:String},
+        color:{type:String}
     }
 )
 
