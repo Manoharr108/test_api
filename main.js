@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const app = express()
 const passage = require('./model/product.model.js')
 require("dotenv").config()
+const cors = require('cors')
+app.use(cors("*"))
 const port = process.env.PORT || 3000
 
 app.use(express.json())
